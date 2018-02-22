@@ -89,7 +89,8 @@ assistant .sidebar {
 assistant.csd .sidebar {
   border-top-style: none; }
 assistant .sidebar label {
-  padding: 6px 12px; }
+  padding: 0px 12px;
+  min-height: 26px; }
 assistant .sidebar label.highlight {
   background-color: #4285F4;
   color: #ffffff; }
@@ -720,7 +721,7 @@ modelbutton.flat arrow.right {
     color: #a2c3fa; }
     *:selected *:link:active, *:selected button:active:link, *:selected button:active:visited {
       color: #d9e7fd; }
-  infobar.info *:link, infobar.info button:link, infobar.info button:visited, infobar.question *:link, infobar.question button:link, infobar.question button:visited, infobar.warning *:link, infobar.warning button:link, infobar.warning button:visited, infobar.error *:link, infobar.error button:link, infobar.error button:visited, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link,
+  infobar.info :link, infobar.question :link, infobar.warning :link, infobar.error :link, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link,
   .selection-mode.titlebar:not(headerbar) .subtitle:link, *:selected *:link, *:selected button:link, *:selected button:visited {
     color: #d9e7fd; }
 
@@ -855,8 +856,8 @@ actionbar {
 
 headerbar,
 .titlebar:not(headerbar) {
-  min-height: 42px;
-  padding: 0 10px;
+  min-height: 30px;
+  padding: 0 2px;
   color: rgba(207, 218, 231, 0.8);
   background-color: #2f343f;
   box-shadow: inset 0 1px rgba(64, 71, 86, 0.95), inset 0 -1px rgba(38, 42, 51, 0.95); }

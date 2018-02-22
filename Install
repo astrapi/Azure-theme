@@ -14,26 +14,26 @@ fi
 repodir=$(cd $(dirname $0) && pwd)
 srcdir=${repodir}/src
 
-  rm -rf $DEST_DIR/Azure*
+  rm -rf $DEST_DIR/astrapi-os*
 
 # Copying files
 for trans in '' '-solid' ; do
   for color in '' '-light' ; do
-	echo -e "   Installing Azure${trans}${color} ..."
+	echo -e "   Installing astrapi-os${trans}${color} ..."
 
-	themedir=$DEST_DIR/Azure${trans}${color}
+	themedir=$DEST_DIR/astrapi-os${trans}${color}
 	install -d ${themedir}
 
 	# Install index.theme
 	echo "[Desktop Entry]" >> ${themedir}/index.theme
 	echo "Type=X-GNOME-Metatheme" >> ${themedir}/index.theme
-	echo "Name=Azure${trans}${color}" >> ${themedir}/index.theme
+	echo "Name=astrapi-os${trans}${color}" >> ${themedir}/index.theme
 	echo "Comment=A flat theme with transparent elements" >> ${themedir}/index.theme
 	echo "Encoding=UTF-8" >> ${themedir}/index.theme
 	echo "" >> ${themedir}/index.theme
 	echo "[X-GNOME-Metatheme]" >> ${themedir}/index.theme
-	echo "GtkTheme=Azure${trans}${color}" >> ${themedir}/index.theme
-	echo "MetacityTheme=Azure${trans}${color}" >> ${themedir}/index.theme
+	echo "GtkTheme=astrapi-os${trans}${color}" >> ${themedir}/index.theme
+	echo "MetacityTheme=astrapi-os${trans}${color}" >> ${themedir}/index.theme
 	echo "IconTheme=Adwaita" >> ${themedir}/index.theme
 	echo "CursorTheme=Adwaita" >> ${themedir}/index.theme
 	echo "ButtonLayout=menu:minimize,maximize,close" >> ${themedir}/index.theme

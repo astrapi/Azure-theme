@@ -142,7 +142,10 @@ assistant {
 
   &.csd .sidebar { border-top-style: none; }
 
-  .sidebar label { padding: 6px 12px; }
+  .sidebar label { 
+		padding: 0px 12px; 
+		min-height: 26px;
+	}
 
   .sidebar label.highlight {
     background-color: $selected_bg_color;
@@ -993,8 +996,8 @@ $_header_backdrop_shadow: if($darker=='false', inset 0 -1px gtkalpha($header_bor
 headerbar,
 %titlebar {
 
-  min-height: 42px;
-  padding: 0 10px;
+  min-height: 30px;
+  padding: 0 2px;
 
 //  border-width: 0 0 1px;
 //  border-style: solid;

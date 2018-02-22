@@ -42,8 +42,8 @@ $header_bg: red;
 @if $transparency=='false' and $variant=='light' { $header_bg: #f0f1f5; }
 @if $transparency=='true' and $variant=='dark' { $header_bg: transparentize(#2F343F, 0.05); }
 @if $transparency=='false' and $variant=='dark' { $header_bg: #2F343F; }
-@if $transparency=='true' and $darker=='true' { $header_bg: transparentize(#3367D6, 0.05); }
-@if $transparency=='false' and $darker=='true' { $header_bg: #3367D6; }
+@if $transparency=='true' and $darker=='true' { $header_bg: transparentize(#005888, 0.05); }
+@if $transparency=='false' and $darker=='true' { $header_bg: #005888; }
 
 $header_bg_backdrop: if($darker == 'true' or $variant == 'dark', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
 
