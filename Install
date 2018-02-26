@@ -17,8 +17,8 @@ srcdir=${repodir}/src
   rm -rf $DEST_DIR/astrapi-os*
 
 # Copying files
-for trans in '' '-solid' ; do
-  for color in '' '-light' ; do
+#for trans in '' '-solid' ; do
+#  for color in '' '-light' ; do
 	echo -e "   Installing astrapi-os${trans}${color} ..."
 
 	themedir=$DEST_DIR/astrapi-os${trans}${color}
@@ -139,8 +139,8 @@ for trans in '' '-solid' ; do
 		themerc${color} \
 		${themedir}/xfwm4/themerc
 
-  done
-done
+#  done
+#done
 
 
 
